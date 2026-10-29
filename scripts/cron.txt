@@ -1,0 +1,13 @@
+
+# ==========================================
+# Project: Sales Data Collection and Preprocessing
+# Schedule file: cron.txt
+# ==========================================
+
+# Collect sales data and preprocess it after successful collection.
+# Schedule: every 1 minutes.
+*/1 * * * * /home/ukibt460/Documents/Verwaltung/for_Online-Courses/for_Liora/Liora_Repo/exam_Bash_MLOps/scripts/test.sh && /home/ukibt460/Documents/Verwaltung/for_Online-Courses/for_Liora/Liora_Repo/exam_Bash_MLOps/scripts/preprocess.sh
+
+# Add other scheduled project tasks below.
+# Example: run a separate daily quality check at 01:00.
+# 0 1 * * * /ABSOLUTE/PATH/TO/PROJECT/quality_check.sh

@@ -1,1 +1,45 @@
 
+2026-10-29 00:26:42 INFO: Starting sales API request.
+2026-10-29 00:26:42 INFO: API endpoint: http://0.0.0.0:5000/rtx3060
+2026-10-29 00:26:42 INFO: API response received.
+2026-10-29 00:26:42 ERROR: API response is not a valid JSON array.
+2026-10-29 03:00:09 INFO: Requesting sales data from API.
+2026-10-29 03:00:09 ERROR: API response is not a JSON array.
+2026-10-29 03:45:45 INFO: Requesting sales data from API.
+2026-10-29 03:45:45 ERROR: API response is not a JSON array.
+2026-10-29 03:54:54 INFO: Requesting GPU model rtx3060 from http://127.0.0.1:5000/rtx3060
+2026-10-29 03:54:54 INFO: Retrieved model=rtx3060 sales=2
+2026-10-29 03:54:54 INFO: Requesting GPU model rtx3070 from http://127.0.0.1:5000/rtx3070
+2026-10-29 03:54:54 INFO: Retrieved model=rtx3070 sales=15
+2026-10-29 03:54:54 INFO: Requesting GPU model rtx3080 from http://127.0.0.1:5000/rtx3080
+2026-10-29 03:54:54 INFO: Retrieved model=rtx3080 sales=15
+2026-10-29 03:54:54 INFO: Requesting GPU model rtx3090 from http://127.0.0.1:5000/rtx3090
+2026-10-29 03:54:54 INFO: Retrieved model=rtx3090 sales=4
+2026-10-29 03:54:54 INFO: Requesting GPU model rx6700 from http://127.0.0.1:5000/rx6700
+2026-10-29 03:54:54 INFO: Retrieved model=rx6700 sales=16
+2026-10-29 03:54:54 INFO: Raw data saved to /home/ukibt460/Documents/Verwaltung/for_Online-Courses/for_Liora/Liora_Repo/exam_Bash_MLOps/data/raw/sales_data_20261029_0354.csv
+2026-10-29 03:54:54 INFO: Collection and preprocessing completed successfully.
+2026-10-29 04:07:29 INFO: Requesting GPU model rtx3060 from http://127.0.0.1:5000/rtx3060
+2026-10-29 04:07:29 INFO: Retrieved model=rtx3060 sales=5
+2026-10-29 04:07:29 INFO: Requesting GPU model rtx3070 from http://127.0.0.1:5000/rtx3070
+2026-10-29 04:07:29 INFO: Retrieved model=rtx3070 sales=1
+2026-10-29 04:07:29 INFO: Requesting GPU model rtx3080 from http://127.0.0.1:5000/rtx3080
+2026-10-29 04:07:29 INFO: Retrieved model=rtx3080 sales=1
+2026-10-29 04:07:29 INFO: Requesting GPU model rtx3090 from http://127.0.0.1:5000/rtx3090
+2026-10-29 04:07:29 INFO: Retrieved model=rtx3090 sales=19
+2026-10-29 04:07:29 INFO: Requesting GPU model rx6700 from http://127.0.0.1:5000/rx6700
+2026-10-29 04:07:29 INFO: Retrieved model=rx6700 sales=19
+2026-10-29 04:07:29 INFO: Raw data saved to /home/ukibt460/Documents/Verwaltung/for_Online-Courses/for_Liora/Liora_Repo/exam_Bash_MLOps/data/raw/sales_data_20261029_0407.csv
+2026-10-29 04:07:29 INFO: Collection and preprocessing completed successfully.
+2026-10-29 12:22:01 INFO: Requesting GPU model rtx3060 from http://127.0.0.1:5000/rtx3060
+2026-10-29 12:22:01 INFO: Retrieved model=rtx3060 sales=19
+2026-10-29 12:22:01 INFO: Requesting GPU model rtx3070 from http://127.0.0.1:5000/rtx3070
+2026-10-29 12:22:01 INFO: Retrieved model=rtx3070 sales=13
+2026-10-29 12:22:01 INFO: Requesting GPU model rtx3080 from http://127.0.0.1:5000/rtx3080
+2026-10-29 12:22:01 INFO: Retrieved model=rtx3080 sales=13
+2026-10-29 12:22:01 INFO: Requesting GPU model rtx3090 from http://127.0.0.1:5000/rtx3090
+2026-10-29 12:22:01 INFO: Retrieved model=rtx3090 sales=9
+2026-10-29 12:22:01 INFO: Requesting GPU model rx6700 from http://127.0.0.1:5000/rx6700
+2026-10-29 12:22:01 INFO: Retrieved model=rx6700 sales=5
+2026-10-29 12:22:01 INFO: Raw data saved to /home/ukibt460/Documents/Verwaltung/for_Online-Courses/for_Liora/Liora_Repo/exam_Bash_MLOps/data/raw/sales_data_20261029_1222.csv
+2026-10-29 12:22:01 INFO: Collection and preprocessing completed successfully.

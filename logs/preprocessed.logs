@@ -1,0 +1,36 @@
+2026-10-29 01:53:25 INFO: Preprocessing started.
+2026-10-29 01:53:25 ERROR: Python script not found: /home/ukibt460/Documents/Verwaltung/for_Online-Courses/for_Liora/Liora_Repo/exam_Bash_MLOps/src/preprocess.py
+2026-10-29 01:58:23 INFO: Preprocessing started.
+total_rows: 500
+invalid_rows: 0
+filtered_rows: 500
+valid_rows: 0
+groups: 0
+output_file: /home/ukibt460/Documents/Verwaltung/for_Online-Courses/for_Liora/Liora_Repo/exam_Bash_MLOps/data/processed/sales_data.csv
+2026-10-29 01:58:23 INFO: Preprocessing completed successfully.
+2026-10-29 03:04:50 ERROR: Usage: preprocessed.sh RAW_FILE YYYYMMDD_HHMM
+2026-10-29 03:54:54 INFO: Processing /home/ukibt460/Documents/Verwaltung/for_Online-Courses/for_Liora/Liora_Repo/exam_Bash_MLOps/data/raw/sales_data_20261029_0354.csv
+total_rows: 504
+invalid_rows: 1
+filtered_rows: 0
+valid_rows: 503
+groups: 9
+output_file: /home/ukibt460/Documents/Verwaltung/for_Online-Courses/for_Liora/Liora_Repo/exam_Bash_MLOps/data/processed/sales_processed_20261029_0354.csv
+2026-10-29 03:54:54 INFO: Processed data saved to /home/ukibt460/Documents/Verwaltung/for_Online-Courses/for_Liora/Liora_Repo/exam_Bash_MLOps/data/processed/sales_processed_20261029_0354.csv
+2026-10-29 04:07:29 INFO: Processing /home/ukibt460/Documents/Verwaltung/for_Online-Courses/for_Liora/Liora_Repo/exam_Bash_MLOps/data/raw/sales_data_20261029_0407.csv
+total_rows: 505
+invalid_rows: 0
+filtered_rows: 0
+valid_rows: 505
+groups: 10
+output_file: /home/ukibt460/Documents/Verwaltung/for_Online-Courses/for_Liora/Liora_Repo/exam_Bash_MLOps/data/processed/sales_processed_20261029_0407.csv
+2026-10-29 04:07:29 INFO: Processed data saved to /home/ukibt460/Documents/Verwaltung/for_Online-Courses/for_Liora/Liora_Repo/exam_Bash_MLOps/data/processed/sales_processed_20261029_0407.csv
+2026-10-29 12:22:01 INFO: Processing /home/ukibt460/Documents/Verwaltung/for_Online-Courses/for_Liora/Liora_Repo/exam_Bash_MLOps/data/raw/sales_data_20261029_1222.csv
+total_rows: 505
+invalid_rows: 0
+filtered_rows: 0
+valid_rows: 505
+groups: 10
+output_file: /home/ukibt460/Documents/Verwaltung/for_Online-Courses/for_Liora/Liora_Repo/exam_Bash_MLOps/data/processed/sales_processed_20261029_1222.csv
+2026-10-29 12:22:01 INFO: Processed data saved to /home/ukibt460/Documents/Verwaltung/for_Online-Courses/for_Liora/Liora_Repo/exam_Bash_MLOps/data/processed/sales_processed_20261029_1222.csv
+2026-10-29 12:22:23 ERROR: Usage: preprocessed.sh RAW_FILE YYYYMMDD_HHMM

@@ -1,0 +1,4 @@
+2026-10-28 23:47:04 INFO: Starting sales API request.
+2026-10-28 23:47:04 INFO: API endpoint: http://0.0.0.0:5000/rtx3060
+2026-10-28 23:47:04 INFO: API response received.
+2026-10-28 23:47:04 ERROR: API response is not a valid JSON array.
