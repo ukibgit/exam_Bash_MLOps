@@ -28,7 +28,7 @@ log_message() {
         >> "$LOG_FILE"
 }
 
-# Validate the existing template without modifying it.
+# Validate the existing 'exam_Bash_MLOps' CSV template without modifying it.
 if [[ ! -f "$TEMPLATE_FILE" ]]; then
     log_message "ERROR: CSV template not found: $TEMPLATE_FILE"
     exit 1
