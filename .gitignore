@@ -1,0 +1,19 @@
+# Python cache and test artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+# Generated timestamped datasets
+data/raw/sales_data_*.csv
+data/processed/sales_processed_*.csv
+
+# Runtime Logs
+logs/*.logs
+logs/tests_logs/
+
+# Generated Model artifacts
+model/*.pkl
+
+# Downloaded or compiled artifacts
+api
+api.tar
