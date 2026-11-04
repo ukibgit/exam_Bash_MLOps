@@ -1,8 +1,10 @@
-.PHONY: tests
+.PHONY: bash tests all
 
+# preprocessed.sh is invoked automatically by collect.sh
 bash:
-
-
+	@echo "Starting GPU sales MLOps pipeline..."
+	bash scripts/collect.sh
+	bash scripts/train.sh
 
 
 tests:
@@ -10,4 +12,4 @@ tests:
 	pytest tests/test_preprocessed.py && \
 	pytest tests/test_model.py
 
-all: 
+all: bash tests
