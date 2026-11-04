@@ -314,3 +314,175 @@ Several details regarding the above order:
 Once you have downloaded your archive to your local machine, you can upload it via the `My Exams` tab.
 
 Good luck!
+
+# GPU Sales Data — Bash MLOps Pipeline
+
+## 1. Project Overview
+
+This project implements the first stage of a multi-stage MLOps pipeline for graphics card sales data.
+
+The pipeline automatically collects GPU sales data from an API, preprocesses the collected data, and trains an XGBoost regression model to predict sales.
+
+The workflow is automated using Bash scripts, a Makefile, and cron.
+
+## 2. Project Structure
+
+```text
+exam_Bash_MLOps/
+├── data/
+│   ├── raw/                  # Original and timestamped sales data
+│   └── processed/             # Preprocessed data for training
+├── logs/                      # Pipeline and test logs
+├── model/                     # Saved trained models
+├── scripts/
+│   ├── collect.sh             # Data collection
+│   ├── preprocessed.sh        # Preprocessing execution
+│   ├── train.sh               # Model training execution
+│   └── cron.txt              # Cron configuration
+├── src/
+│   ├── preprocessed.py         # Data preprocessing
+│   └── train.py                # Model training and evaluation
+├── tests/                      # Project tests (provided)
+├── Makefile                    # Pipeline automation
+├── README.md
+├── requirements.txt
+├── pyproject.toml
+└── uv.lock
+```
+
+## 3. Installation and Environment Setup
+
+Clone the repository and navigate to the project directory.
+
+Create and activate a virtual environment:
+
+```bash
+python3 -m venv .venv
+source .venv/bin/activate
+```
+
+Install the required dependencies:
+
+```bash
+python3 -m pip install -r requirements.txt
+```
+
+Ensure that the required system tools are installed, including Bash, curl, jq, and make.
+
+## 4. How to Run the Pipeline
+
+Execute the complete pipeline with:
+
+```bash
+make bash
+```
+
+The command runs the following stages sequentially:
+
+1. Collect GPU sales data from the API.
+2. Save the collected data in `data/raw/`.
+3. Preprocess the collected data.
+4. Save the processed data in `data/processed/`.
+5. Train and evaluate the XGBoost regression model.
+6. Save the trained model in `model/`.
+
+## 5. How to Run Tests
+
+Run the provided project tests using:
+
+```bash
+make tests
+```
+
+The tests verify:
+
+- Data collection and raw CSV structure.
+- Preprocessed CSV structure and data types.
+- Successful model training and existence of the saved model.
+
+**Note:** The provided test files must not be modified.
+
+## 6. Cron Configuration and Schedule
+
+The complete pipeline is scheduled to run automatically every three minutes.
+
+The cron configuration is maintained in:
+
+```text
+scripts/cron.txt
+```
+
+To install the configuration for the current user:
+
+```bash
+crontab -e
+```
+
+To verify the active scheduled tasks:
+
+```bash
+crontab -l
+```
+
+Pipeline output is appended to:
+
+```text
+logs/cron.logs
+```
+
+The scheduled job executes `make bash`, which runs data collection, preprocessing, and model training.
+
+## 7. Data and Model Output
+
+### Raw data
+
+Raw data is stored in `data/raw/`.
+
+The original `sales_data.csv` template is preserved. Each collection creates a timestamped snapshot, for example:
+
+```text
+sales_data_YYYYMMDD_HHMM.csv
+```
+
+### Processed data
+
+Preprocessed data is stored in `data/processed/`.
+
+Files follow the naming convention:
+
+```text
+sales_processed_YYYYMMDD_HHMM.csv
+```
+
+The processed dataset contains aggregated sales information and integer-encoded GPU model identifiers.
+
+### Trained models
+
+Models are stored in `model/`.
+
+- `model.pkl`: the first trained model.
+- `model_YYYYMMDD_HHMMSS.pkl`: subsequent timestamped model versions.
+
+The model is trained using XGBoost and evaluated using RMSE, MAE, and R².
+
+## 8. Dependencies and Python Version
+
+The project uses Python and the following main libraries:
+
+- pandas
+- numpy
+- scikit-learn
+- xgboost
+- joblib
+
+The project specifies Python 3.12 as its target version.
+
+Dependencies and project configuration are managed using:
+
+```text
+requirements.txt
+pyproject.toml
+uv.lock
+```
+
+The virtual environment (`.venv`) should not be included in the final project archive.

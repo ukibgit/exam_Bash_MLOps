@@ -137,6 +137,17 @@ def read_and_validate(input_file):
 
     return totals, counts, statistics
 
+def model_to_integer(model):
+    """Convert GPU model names into integer codes."""
+    models = {
+        "rtx3060": 0,
+        "rtx3070": 1,
+        "rtx3080": 2,
+        "rtx3090": 3,
+        "rx6700": 4,
+    }
+
+    return models[model]
 
 def write_output(output_file, totals, counts):
     """Write aggregated results to a separate CSV."""
@@ -154,10 +165,10 @@ def write_output(output_file, totals, counts):
 
         for (date, model), total in sorted(totals.items()):
             writer.writerow([
-                date,
-                model,
-                format(total, "f"),
-                counts[(date, model)],
+                int(date.replace("-", "")),
+                model_to_integer(model),
+                int(total),
+                int(counts[(date, model)]),
             ])
 
 
